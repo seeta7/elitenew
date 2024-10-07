@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> The Elite Advertising</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Elite Advertising Logo">
+            </div>
+            <div class="navbar">
+              <button><a href="index.html"> <i class="fa fa-home"></i> Home</a></button>
+              <button><a href="about.html"> <i class="fa fa-envelope"></i> About</a></button>
+              <button><a href="map.html"><i class="fa fa-envelope"></i> Contact</a></button>
+          </div>
+           
+              <!--
+               <button> <a href="index.html"><i class="fa fa-home"></i>Home</a></button>
+               <button> <a href="about.html"><i class="fa fa-envelope"></i> About</a></button> 
+               <button> <a href="map.html"><i class="fa fa-envelope"></i> Contact</a></button>
+              </div>
+            -->
+              
+                <div class="subnav">
+                  <button class="subnavbtn"><i class="fa fa-cogs"></i> services <i class="fa fa-caret-down"></i></button>
+                  <div class="subnav-content">
+                   <a href="DigitalSolution.html"><i class="fa fa-truck"></i> DIGTIAL SOLUTION</a>
+                   <a href="Digitalprintint.html"><i class="fa fa-truck-loading"></i>DESIGN PRINTING </a>
+                  <a href="bulksms.html"><i class="fa fa-truck-loading"></i>BULK SMS </a>
+                   <a href="web.html"><i class="fa fa-box"></i> WEB DEVELOPMENT</a>
+                    <a href="boosting.html "><i class="fa fa-plane"></i>BOOSTING SERVICES  </a>
+                     <a href="planning.html"><i class="fa fa-plane"></i>PLANNING,BRANDING,RESERACH </a>
+                    <a href="creative.html"><i class="fa fa-plane"></i>CREATIVE STRATEGIES </a>
+                    <a href="adsmanagement.html"><i class="fa fa-plane"></i> ADS MANAGEMENT </a>
+                     <a href="advertising.html"><i class="fa fa-plane"></i>ADVERTISING CAMPAIGN  </a>
+                  </div>
+                </div>
+
+    </header>
+
+    <!-- Hero Section with Video Background -->
+    <section class="hero">
+        <video autoplay muted loop id="bg-video">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-content">
+            <h1>The Greatest Advertising Solutions</h1>
+            <p>Empowering your brand with advanced photography, graphic design, and more!</p>
+           
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                <h4>Get Started</h4>
+            </button>
+        
+            
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="store.php" method="post">
+                    <div class="container2">
+                        <h1>Enroll now and get 40% off</h1>
+                        <div class="container">
+                            <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Enter Name" name="name" required>
+        
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+        
+                            <label for="phone"><b>Phone Number</b></label>
+                            <input type="text" placeholder="Enter Phone number" name="phone" required>
+        
+                            <div class="clearfix">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <button type="submit" class="signupbtn">Enroll now</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+            
+ 
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content"></div>
+            <div class="footer-logo">
+                <img src="logo.jpg" alt="Elite Advertising Logo">
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/TheEliteAdvertisement" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/yourwhatsapplink" target="_blank" class="social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+           
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About Us</a>| 
+                <a href="map.html">Maps</a> | 
+                <a href="faqs.html">FAQs</a> | 
+                <a href="termandcondition.html">Terms and Conditions</a> | 
+                <a href="privacyandpolicy.html">Privacy Policy</a>
+            </div>
+        </div>
+        <p>&copy; 2024  the Elite Advertising . All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <h5>
+        <div class="popup-notification popup1">
+            <div class="popup-content">
+              <h1><b>The elite</b></h1>
+              <h2><p><i></i>always ready to serve you</i></p></h2>
+            </div>
+          </div>
+        
+          <!-- Popup Notification 2 -->
+          <div class="popup-notification popup2">
+            <div class="popup-content">
+              <h1>digitilize <i>your business with us</i></h1>  
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us -  The Elite Advertising</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    .about-section {
+      background: linear-gradient(135deg, #f39c12, #e67e22);
+      padding: 50px 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .about-section h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      animation: fadeIn 1s ease-in-out; /* Fade in animation */
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      animation: fadeIn 1s ease-in-out 0.5s forwards; /* Delay fade in */
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      animation: slideIn 1s ease-in-out forwards; /* Slide in animation */
+    }
+
+    .service-card {
+      background-color: #fff;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      overflow: hidden;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease; /* Image zoom on hover */
+    }
+
+    .service-card img:hover {
+      transform: scale(1.05);
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      color: #333;
+      margin: 20px;
+    }
+
+    .service-card p {
+      color: #555;
+      margin: 0 20px 20px;
+      font-size: 1rem;
+    }
+
+    .vision-mission {
+      padding: 50px 20px;
+      background-color: #ecf0f1;
+    }
+
+    .vision-mission h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #e67e22;
+    }
+
+    .vision-mission .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .vision-mission .box {
+      max-width: 500px;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out forwards; /* Fade in animation for boxes */
+    }
+
+    .vision-mission .box h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .vision-mission .box p {
+      color: #555;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+        /* Page Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* About Us Section */
+        .about-us {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .about-us h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+
+        .about-us p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Content Section with Image */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .content img {
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        .content .text-section {
+            max-width: 600px;
+            padding-left: 20px;
+        }
+
+        .content .text-section h2 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .content .text-section p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .content .text-section a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .content .text-section a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #00BFFF;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="about-section">
+        <h1>About Elite Advertising</h1>
+        <p>At Elite Advertising, we combine creativity, strategy, and technology to craft campaigns that elevate brands. Our goal is to help businesses of all sizes unlock their full potential through custom, results-driven advertising solutions.</p>
+      <h2>Enriching experiences to amaze you! With creativity, technology, and innovation at the forefront</h2>
+    </div>
+    
+      <!-- Services Section -->
+      <div class="services">
+        <div class="service-card">
+          <img src="aboutchotra1.jpg" alt="Digital Marketing">
+          <h3>Digital Marketing</h3>
+          <p>From SEO to social media management, we create strategies that engage and convert your audience.</p>
+        </div>
+    
+        <div class="service-card">
+          <img src="aboutchitra3.jpg" alt="Creative Design">
+          <h3>Creative Design & Print</h3>
+          <p>We offer innovative design solutions that align with your brand’s vision, including print services for all your needs.</p>
+        </div>
+    
+        <div class="service-card">
+          <img src="aboutchitra4.jpg" alt="Web Development">
+          <h3>Web Development</h3>
+          <p>We build beautiful, user-friendly websites that help your business make an impact online.</p>
+        </div>
+      </div>
+    
+      <!-- Vision and Mission Section -->
+      <div class="vision-mission">
+        <h2>Our Vision & Mission</h2>
+        <div class="content">
+          <div class="box">
+            <h3>Our Vision</h3>
+            <p>To be the leading advertising agency, renowned for our creativity and dedication to delivering impactful solutions for businesses around the globe.</p>
+          </div>
+          <div class="box">
+            <h3>Our Mission</h3>
+            <p>We aim to provide innovative and personalized advertising strategies that help our clients stand out, achieve their business goals, and grow in a competitive marketplace.</p>
+          </div>
+        </div>
+      </div>
+    
+
+        <!-- Content Section -->
+        <div class="content">
+            <!-- Image -->
+            <img src="aboutchitra.jpg" alt="Theater Image">
+
+            <!-- Text Section -->
+            <div class="text-section">
+                <h2>we serve</h2>
+                <p>
+                    The Elite Advertising offers
+unique and customized digital
+solutions to businesses both large
+and small. We are everything
+you'd expect from a digital
+agency. We are social, digital and
+creative. we are accountable.
+flexible and committed !
+                </p>
+                <div class="text-section">
+                    <h2> Company Overview</h2>
+                    <p>
+                       
+The Elite Advertising is a digital marketing agency specializing in providing comprehensive online marketing solutions to businesses of all sizes. With a team of highly skilled professionals, we help our clients increase their online visibility, drive targeted traffic and boost their conversion rates. Our expertise lies in creating data-driven strategies and implementing cutting-edge digital marketing techniques to deliver measurable results. We also provide professional videography and photography that specializes in capturing compelling visuals and contents.
+At The Elite Advertising, we foster a collaborative and innovative work and environment. We value continuous learning, creativity, and a data-driven approach. Our team members are passionate about digital marketing and stay updated with the latest industry trends and techniques. We encourage open communication, teamwork, and personal growth. Our goal is to deliver exceptional results for our clients while maintain a positive and enjoyable work atmosphere.
+We have with different clients and companies assisting them with Graphics, Ads campaign, Visuals, creative contents as such MOTION GRAPHICS for BHOJMANDU (KATHMANDU) DIGITAL MARKETING for BNC & PCH, CREATIVE CONTENT for DENTED CODE (CANBERRA,AUSTRALIA) and many more
+                    </p>
+                <a href="readmore.html">Read More &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024  The Elite Advertising . All rights reserved.</p>
+        <p><a href="#about">About Us</a> | <a href="map.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>

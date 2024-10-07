@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Animation without Background Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            transition: background-image 1s ease-in-out;
+            /* background-image: url('boost.jpg'); */ /* Removed background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            text-align: center;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            margin: 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            font-size: 2.5em;
+            color: #007BFF;
+        }
+
+        .container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .animated-content {
+            perspective: 1500px;
+            display: inline-block;
+            width: 100%;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+            opacity: 0;
+            transform: rotateX(90deg) scale(0.9);
+        }
+
+        .content.hidden {
+            transform: rotateX(-90deg) scale(0.9);
+            opacity: 0;
+        }
+
+        .content.show {
+            transform: rotateX(0deg) scale(1);
+            opacity: 1;
+        }
+
+        .title {
+            font-size: 2.5em;
+            margin: 20px 0;
+            color: #007BFF;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .description {
+            font-size: 1.4em;
+            color: #555;
+            margin: 20px 0;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>THE ADVERTISING CAMPAIGN</h1>
+
+    <video autoplay muted loop id="bg-video">
+        <source src="campaign.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="container">
+        <div class="container">
+            <div class="animated-content">
+                <div id="content1" class="content show">
+                    <div class="title">Comprehensive Campaign Strategy</div>
+                    <div class="description">We develop a strategic plan tailored to your brand’s objectives, market positioning, and target audience. Our approach ensures that every aspect of the campaign aligns with your business goals and resonates with your customers.
+
+                    </div>
+                </div>
+                <div id="content2" class="content hidden">
+                    <div class="title">Creative Concept Development</div>
+                    <div class="description">Our team of creative professionals brings fresh and innovative ideas to the table. From eye-catching visuals to compelling messages, we design campaigns that capture attention and engage your audience.</div>
+                </div>
+                    
+                <div id="content3" class="content hidden">
+                    <div class="title">Multi-Channel Advertising</div>
+                    <div class="description">To maximize your reach, we utilize a variety of channels including digital platforms (social media, email, PPC), traditional media (TV, radio, print), and outdoor advertising. Our multi-channel approach ensures that your campaign reaches potential customers wherever they are</div>
+                </div>
+            </div>
+            <div class="navigation-buttons">
+                <button onclick="previousContent()">Previous</button>
+                <button onclick="nextContent()">Next</button>
+            </div>
+        </div>
+    
+        <script>
+            const contents = [
+                {
+                    title: "Elite Advertising",
+                    description: "Your Partner in Innovative Advertising Campaigns. We specialize in crafting and executing top-tier advertising campaigns that drive results and elevate your brand.",
+                },
+                {
+                    title: "Creative Solutions",
+                    description: "We provide innovative solutions to make your brand stand out. From eye-catching visuals to engaging content, we deliver high-impact campaigns.",
+                },
+                {
+                    title: "Targeted Media Buying",
+                    description: "Our media buying expertise ensures optimal placement and cost-efficiency, driving the best possible results.",
+                }
+            ];
+    
+            let currentIndex = 0;
+            const contentsDivs = document.querySelectorAll('.content');
+    
+            function showContent(index) {
+                contentsDivs.forEach((content, i) => {
+                    if (i === index) {
+                        content.classList.remove('hidden');
+                        content.classList.add('show');
+                    } else {
+                        content.classList.remove('show');
+                        content.classList.add('hidden');
+                    }
+                });
+            }
+    
+            function nextContent() {
+                currentIndex = (currentIndex + 1) % contents.length;
+                showContent(currentIndex);
+            }
+    
+            function previousContent() {
+                currentIndex = (currentIndex - 1 + contents.length) % contents.length;
+                showContent(currentIndex);
+            }
+    
+            // Initialize the first content
+            showContent(currentIndex);
+    
+            // Automatically switch content every 5 seconds
+            setInterval(nextContent, 5000);
+        </script>
+    </body>
+</html>

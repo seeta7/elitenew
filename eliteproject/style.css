@@ -1,0 +1,447 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color:gray;
+}
+
+    /* Styling for the navbar container */
+.navbar {
+  display: flex; /* Arrange buttons horizontally */
+  justify-content: center; /* Center buttons in the middle */
+  align-items: center; /* Vertically center the buttons */
+  gap: 15px; /* Space between each button */
+  background-color: #333; /* Background color for navbar */
+  padding: 10px; /* Padding around navbar */
+}
+
+/* Styling for the buttons */
+.navbar button {
+  background-color: black; /* Button background color */
+  border: none;
+  color: white; /* Button text color */
+  padding: 12px 20px; /* Padding inside buttons */
+  font-size: 20px; /* Button text size */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for buttons */
+.navbar button:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+/* Styling for the links inside the buttons */
+.navbar a {
+  color: white; /* Link text color */
+  text-decoration: none; /* Remove underline */
+  display: flex; /* Ensure icons and text are aligned */
+  align-items: center;
+}
+
+/* Space between the icon and the text */
+.navbar i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+ 
+/* Styling for the subnav button */
+.subnav {
+  position: relative;
+  display: inline-block;
+}
+
+.subnavbtn {
+  background-color: gray;
+  color: white;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.subnavbtn:hover {
+  background-color: #3e8e41;
+}
+
+/* Styling for the dropdown content (initially hidden) */
+.subnav-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  max-height: 600px; /* Set a maximum height for the dropdown */
+  overflow-y: auto; /* Enable vertical scroll when content exceeds height */
+  right:0%;
+}
+
+.subnav-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.subnav-content a:hover {
+  background-color: #ddd;
+}
+
+/* Display dropdown content on hover */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+
+  
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color:gray;
+    font-weight: bold;
+    font-size: medium;
+}
+
+/* Popup container common styles */
+.popup-notification {
+    position: fixed;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.5s ease;
+  }
+
+  /* Notification 1 (Top-Right corner) */
+  .popup1 {
+    bottom:  20px;
+    right: 20px;
+    animation: showPopup 1s forwards 0.5s, hidePopup 1s forwards 5s;
+  }
+  
+  /* Notification 2 (Bottom-Left corner) */
+  .popup2 {
+    bottom:  20px;
+    left: 20px;
+    animation: showPopup 1s forwards 2s, hidePopup 1s forwards 7s;
+  }
+  
+  /* Popup content styling */
+  .popup-content h1 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color:white;
+  }
+  
+  .popup-content p {
+    font-size: 14px;
+    color:white;
+  }
+   /* Keyframes for appearing */
+   @keyframes showPopup {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Keyframes for disappearing */
+  @keyframes hidePopup {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  }
+  
+
+
+/* Video Background Styling */
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Keep it behind the text content */
+}
+
+/* Hero Section */
+.hero {
+    position: relative; /* To position the video behind the content */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    overflow: hidden; /* Ensures that the video doesn't overflow */
+}
+
+.hero-content {
+    z-index: 1; /* Keep the text in front of the video */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.hero-content .cta {
+    background-color: gray;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*get started*/
+
+body {font-family: Arial, Helvetica, sans-serif;}
+                * {box-sizing: border-box;}
+                
+                /* Full-width input fields */
+                input[type=text], input[type=password] {
+                  width: 100%;
+                  padding: 15px;
+                  margin: 5px 0 22px 0;
+                  display: inline-block;
+                  border: none;
+                
+                }
+                
+                                
+                /* Add a background color when the inputs get focus */
+                input[type=text]:focus, input[type=password]:focus {
+                
+                  outline: none;
+                }
+                
+                /* Set a style for all buttons */
+                button {
+                  background-color:yellow;
+                  color:black;
+                  padding: 14px 20px;
+                  margin: 8px 0;
+                  border: none;
+                  cursor: pointer;
+                  width: 100%;
+                  opacity: 0.9;
+                }
+                
+                button:hover {
+                  opacity:4;
+                }
+                
+                /* Extra styles for the cancel button */
+                .cancelbtn {
+                  padding: 14px 20px;
+                  background-color: #f44336;
+                }
+                
+                /* Float cancel and signup buttons and add an equal width */
+                .cancelbtn, .signupbtn {
+                  float: left;
+                  width: 50%;
+                }
+                .container2 {
+                  padding: 16px;
+                  background-color: gray;
+                  color: black;
+                }
+                
+                
+                /* Add padding to container elements */
+                .container {
+                  padding: 16px;
+                }
+
+                
+                /* The Modal (background) */
+                .modal {
+                  display: none; /* Hidden by default */
+                  position: fixed; /* Stay in place */
+                  z-index: 1; /* Sit on top */
+                  left: 0;
+                  top: 0;
+                  width: 100%; /* Full width */
+                  height: 100%; /* Full height */
+                  overflow: auto; /* Enable scroll if needed */
+                  background-color: #474e5d;
+                  padding-top: 50px;
+                }
+                
+                /* Modal Content/Box */
+                .modal-content {
+                  background-color: #fefefe;
+                  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                  border: 1px solid #888;
+                  width: 80%; /* Could be more or less, depending on screen size */
+                }
+                
+                /* Style the horizontal ruler */
+                hr {
+                  border: 1px solid #f1f1f1;
+                  margin-bottom: 25px;
+                }
+                 
+                /* The Close Button (x) */
+                .close {
+                  position: absolute;
+                  right: 35px;
+                  top: 15px;
+                  font-size: 40px;
+                  font-weight: bold;
+                  color: #f1f1f1;
+                }
+                
+                .close:hover,
+                .close:focus {
+                  color: #f44336;
+                  cursor: pointer;
+                }
+                
+                /* Clear floats */
+                .clearfix::after {
+                  content: "";
+                  clear: both;
+                  display: table;
+                }
+                
+                /* Change styles for cancel button and signup button on extra small screens */
+                @media screen and (max-width: 300px) {
+                  .cancelbtn, .signupbtn {
+                     width: 100%;
+                  }
+                }
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+
+    background-color: #f1f1f1;
+            padding: 20px 0;
+            text-align: center;
+            color: #333;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .footer-logo img {
+            width: 150px;
+            margin-bottom: 1rem;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center; /* Align center horizontally */
+            align-items: center;
+            gap: 15px; /* Space between icons */
+        }
+
+        .social-media a {
+            color: #333;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .fa-facebook-f{
+            color: #00BFFF;
+            position: absolute, left="50%";
+            padding-left: 20;
+        }
+        .fa-instagram{
+            color: deeppink;
+            text-align: center;
+            align-items: center;
+        }
+        .fa-whatsapp{
+            color: green;
+        }
+
+        .social-media a:hover {
+            color: #00BFFF; /* Change color on hover */
+        }
+
+        /* Subscribe Form */
+        .
+
+
+        .footer-links {
+            margin-top: 1.5rem;
+        }
+
+        .footer-links a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-links a:hover {
+            color: #00BFFF;
+        }
+
+
+/* Mobile fallback for the background video */
+@media (max-width: 768px) {
+    #bg-video {
+        display: none; /* Hide the video on mobile devices */
+    }
+
+    .hero {
+        background: url('background.jpg') no-repeat center center/cover; /* Fallback image */
+    }
+}

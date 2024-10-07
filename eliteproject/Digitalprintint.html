@@ -1,0 +1,351 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Elite Advertising</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            background-color: #e67e22;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content-section {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h2, h3 {
+            color: #e67e22;
+            opacity: 0; /* Start with opacity 0 for animation */
+            transform: translateY(-20px); /* Start slightly above */
+            animation: slideIn 0.5s forwards; /* Animate headings */
+        }
+
+        h2 {
+            animation-delay: 0.2s; /* Delay for main heading */
+        }
+
+        h3 {
+            animation-delay: 0.4s; /* Delay for subheadings */
+        }
+
+        ul {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0;
+        }
+
+        li {
+            opacity: 0; /* Start with opacity 0 for animation */
+            animation: fadeInUp 0.5s forwards; /* Animate list items */
+            transform: translateY(20px); /* Start slightly below */
+            margin-bottom: 10px; /* Space between items */
+        }
+
+        li:nth-child(n) {
+            animation-delay: calc(0.6s + (0.2s * var(--i))); /* Delay for each item */
+        }
+
+        .service {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            opacity: 0; /* Start with opacity 0 for animation */
+            animation: fadeInUp 0.5s forwards; /* Animate service blocks */
+            transform: translateY(20px); /* Start slightly below */
+        }
+
+        .service img {
+            width: 100px; /* Set image width */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 20px; /* Space between image and text */
+        }
+
+        .read-more-btn, .back-btn {
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: fadeIn 0.5s;
+        }
+
+        .read-more-content {
+            display: none; /* Hidden by default */
+            margin-top: 20px;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <script>
+        function toggleReadMore(service) {
+            const content = document.getElementById(`more-${service}`);
+            const button = document.getElementById(`read-more-${service}`);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+                button.innerHTML = "Back";
+            } else {
+                content.style.display = "none";
+                button.innerHTML = "Read More";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome to The Elite Advertising</h1>
+    </div>
+
+    <div class="content-section">
+        <h2>Design and Printing Services</h2>
+        <p>
+            At <strong>ELITE Advertising</strong>, we believe that effective design is the cornerstone of successful communication. Our Design and Printing services are tailored to bring your brand vision to life through stunning visuals and high-quality printed materials.
+        </p>
+        <h3>Our Services Include:</h3>
+        <div class="service" style="--i:0;">
+            <img src="https://via.placeholder.com/100" alt="Graphic Design">
+            <div>
+                <strong>Graphic Design:</strong> Our creative team crafts unique and compelling designs that resonate with your target audience.
+               
+                    <p>Our graphic design services encompass everything from logo creation to full marketing campaigns. We ensure that every design is not only visually appealing but also strategically aligned with your branding goals. Whether you need a simple flyer or an intricate brochure, our team is ready to help you stand out in the crowded market.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service" style="--i:1;">
+            <img src="https://via.placeholder.com/100" alt="Brochure and Flyer Printing">
+            <div>
+                <strong>Brochure and Flyer Printing:</strong> High-quality brochures and flyers designed to capture attention.
+               
+                    <p>We offer a variety of printing options for brochures and flyers, including different paper stocks and finishes. Our team will guide you in choosing the best options that suit your needs and budget. Expect quick turnaround times and vibrant prints that convey your message effectively.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service" style="--i:2;">
+            <img src="https://via.placeholder.com/100" alt="Business Stationery">
+            <div>
+                <strong>Business Stationery:</strong> Customized letterheads, envelopes, and notepads that make a lasting impression.
+               
+                    <p>Your business stationery reflects your brand identity. We create cohesive designs for letterheads, envelopes, and notepads that reinforce your professionalism. From elegant designs to fun and creative concepts, we tailor our offerings to meet your specific requirements.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service" style="--i:3;">
+            <img src="https://via.placeholder.com/100" alt="Posters and Banners">
+            <div>
+                <strong>Posters and Banners:</strong> Eye-catching posters and large-format banners for your campaigns and events.
+                
+                    <p>Our posters and banners are designed to stand out and draw attention. With various sizes and finishes available, we help you choose the right option for your needs. Whether for indoor or outdoor use, our prints are vibrant and durable, ensuring your message reaches your audience effectively.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service" style="--i:4;">
+            <img src="https://via.placeholder.com/100" alt="Promotional Materials">
+            <div>
+                <strong>Promotional Materials:</strong> Create memorable items such as stickers, labels, and merchandise.
+                A
+                    <p>Our promotional materials range from custom stickers to branded merchandise that enhances your visibility. We work with you to create unique products that reflect your brand and appeal to your target audience. Our team ensures high-quality materials and printing to bring your ideas to life.</p>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Why Choose Us?</h3>
+        <p>
+            <ul>
+                <li style="--i:0;"><strong>Quality Assurance:</strong> We use advanced printing technology and high-quality materials to ensure that every product meets our strict standards for excellence.</li>
+                <li style="--i:1;"><strong>Fast Turnaround:</strong> Our efficient processes ensure that you receive your materials promptly, without compromising on quality.</li>
+                <li style="--i:2;"><strong>Customized Solutions:</strong> Our team works closely with you to deliver customized solutions that align with your goals.</li>
+                <li style="--i:3;"><strong>Competitive Pricing:</strong> We offer affordable pricing options without sacrificing quality, making professional design and printing accessible to businesses of all sizes.</li>
+            </ul>
+        </p>
+        <p>
+            Elevate your brand with our comprehensive Design and Printing services. Contact us today to discuss your project and discover how we can help you create impactful marketing materials that drive results.
+        </p>
+    </div>
+
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Elite Advertising</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            background-color: gray;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content-section {
+            max-width: 1200px; /* Increased max width for better layout */
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: gray;
+            text-align: center; /* Centered headings */
+            margin-bottom: 20px; /* Added margin for spacing */
+        }
+
+        .services-container {
+            display: flex; /* Flexbox for responsive layout */
+            flex-wrap: wrap; /* Allow wrapping to new lines */
+            justify-content: space-around; /* Space around items */
+        }
+
+        .service {
+            background-color: #f3f3f3; /* Light grey background */
+            border: 1px solid #e0e0e0; /* Border around each service box */
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px;
+            width: calc(30% - 30px); /* Responsive width */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: transform 0.3s; /* Smooth scale effect */
+        }
+
+        .service:hover {
+            transform: translateY(-5px); /* Hover effect */
+        }
+
+        .service img {
+            width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px; /* Rounded corners for images */
+            margin-bottom: 10px; /* Space between image and text */
+        }
+
+        .service strong {
+            display: block; /* Block display for strong text */
+            font-size: 1.2em; /* Larger font size for titles */
+            margin-bottom: 10px; /* Space below titles */
+        }
+
+        @media (max-width: 768px) {
+            .service {
+                width: calc(45% - 30px); /* Adjust width for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service {
+                width: 100%; /* Full width for mobile devices */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Design and Printing Services</h1>
+    </div>
+
+    <div class="content-section">
+        <h2></h2>
+        <p>
+            At <strong>ELITE Advertising</strong>, we believe that effective design is the cornerstone of successful communication. Our Design and Printing services are tailored to bring your brand vision to life through stunning visuals and high-quality printed materials.
+        </p>
+        <b><h3>Our Services Include:</h3></b>
+        <div class="services-container">
+            <div class="service">
+             
+                <strong>Graphic Design:</strong>
+                <p>Our creative team crafts unique and compelling designs that resonate with your target audience.</p>
+                <p>Our graphic design services encompass everything from logo creation to full marketing campaigns. We ensure that every design is not only visually appealing but also strategically aligned with your branding goals. Whether you need a simple flyer or an intricate brochure, our team is ready to help you stand out in the crowded market.</p>
+                <img src="digitalchitra.jpg" alt="Graphic Design">
+            </div>
+            <div class="service">
+               
+                <strong>Brochure and Flyer Printing:</strong>
+                <p>High-quality brochures and flyers designed to capture attention.</p>
+                <p>We offer a variety of printing options for brochures and flyers, including different paper stocks and finishes. Our team will guide you in choosing the best options that suit your needs and budget. Expect quick turnaround times and vibrant prints that convey your message effectively.</p>
+                <img src="digitalchira2.jpg" alt="Brochure and Flyer Printing">
+            </div>
+            <div class="service">
+              
+                <strong>Business Stationery:</strong>
+                <p>Customized letterheads, envelopes, and notepads that make a lasting impression.</p>
+                <p>Your business stationery reflects your brand identity. We create cohesive designs for letterheads, envelopes, and notepads that reinforce your professionalism. From elegant designs to fun and creative concepts, we tailor our offerings to meet your specific requirements.</p>
+                <img src="digitalchitra3.jpg" alt="Business Stationery">
+            </div>
+            <div class="service">
+                
+                <strong>Posters and Banners:</strong>
+                <p>Eye-catching posters and large-format banners for your campaigns and events.</p>
+                <p>Our posters and banners are designed to stand out and draw attention. With various sizes and finishes available, we help you choose the right option for your needs. Whether for indoor or outdoor use, our prints are vibrant and durable, ensuring your message reaches your audience effectively.</p>
+                <img src="digitalchitra4.jpg" alt="Posters and Banners">
+            </div>
+            <div class="service">
+               
+                <strong>Promotional Materials:</strong>
+                <p>Create memorable items such as stickers, labels, and merchandise.</p>
+                <p>Our promotional materials range from custom stickers to branded merchandise that enhances your visibility. We work with you to create unique products that reflect your brand and appeal to your target audience. Our team ensures high-quality materials and printing to bring your ideas to life.</p>
+                <img src="digitalchitra5.jpg" alt="Promotional Materials">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

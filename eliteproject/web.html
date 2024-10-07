@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Services - The Elite Advertising</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            background-color: gray;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content-section {
+            max-width: 1200px; /* Increased max width for better layout */
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: gray;
+            text-align: center; /* Centered headings */
+            margin-bottom: 20px; /* Added margin for spacing */
+        }
+
+        .services-container {
+            display: flex; /* Flexbox for responsive layout */
+            flex-wrap: wrap; /* Allow wrapping to new lines */
+            justify-content: space-around; /* Space around items */
+        }
+
+        .service {
+            background-color: #f3f3f3; /* Light grey background */
+            border: 1px solid #e0e0e0; /* Border around each service box */
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px;
+            width: calc(30% - 30px); /* Responsive width */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: transform 0.3s; /* Smooth scale effect */
+        }
+
+        .service:hover {
+            transform: translateY(-5px); /* Hover effect */
+        }
+
+        .service img {
+            width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px; /* Rounded corners for images */
+            margin-bottom: 10px; /* Space between image and text */
+        }
+
+        .service strong {
+            display: block; /* Block display for strong text */
+            font-size: 1.2em; /* Larger font size for titles */
+            margin-bottom: 10px; /* Space below titles */
+        }
+
+        @media (max-width: 768px) {
+            .service {
+                width: calc(45% - 30px); /* Adjust width for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service {
+                width: 100%; /* Full width for mobile devices */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Web Development Services</h1>
+    </div>
+
+    <div class="content-section">
+        <h2></h2>
+        <p>
+            At <strong>ELITE Advertising</strong>, we specialize in providing top-notch Web Development services to help your business establish a strong online presence. Our team of experienced developers is dedicated to creating custom websites that meet your unique needs and drive results.
+        </p>
+        <h3>Our Web Development Services Include:</h3>
+        <div class="services-container">
+            <div class="service">
+                <strong>Custom Website Development:</strong>
+                <p>Get a tailored website that reflects your brand's identity.</p>
+                <p>Our custom website development service focuses on creating websites that are not only visually appealing but also optimized for performance and user experience. We ensure that your website stands out in the competitive online landscape.</p>
+                <img src="web_dev_custom.jpg" alt="Custom Website Development">
+            </div>
+            <div class="service">
+                <strong>E-commerce Development:</strong>
+                <p>Launch your online store with our e-commerce solutions.</p>
+                <p>We develop robust e-commerce websites that facilitate seamless shopping experiences. Our solutions include payment integration, inventory management, and user-friendly interfaces to boost sales and enhance customer satisfaction.</p>
+                <img src="web_dev_ecommerce.jpg" alt="E-commerce Development">
+            </div>
+            <div class="service">
+                <strong>Responsive Design:</strong>
+                <p>Ensure your website looks great on all devices.</p>
+                <p>With the increasing use of mobile devices, our responsive design service ensures that your website adapts perfectly to different screen sizes. This enhances user experience and helps retain visitors.</p>
+                <img src="web_dev_responsive.jpg" alt="Responsive Design">
+            </div>
+            <div class="service">
+                <strong>Content Management Systems (CMS):</strong>
+                <p>Manage your content easily with our CMS solutions.</p>
+                <p>We provide CMS development services that allow you to manage your website's content without any technical knowledge. Our team can set up popular CMS platforms like WordPress, Joomla, or custom solutions tailored to your needs.</p>
+                <img src="web_dev_cms.jpg" alt="Content Management Systems">
+            </div>
+            <div class="service">
+                <strong>Website Maintenance & Support:</strong>
+                <p>Keep your website running smoothly with our support services.</p>
+                <p>We offer ongoing website maintenance and support to ensure your website remains up-to-date, secure, and optimized. Our team is here to help with updates, backups, and troubleshooting.</p>
+                <img src="web_dev_maintenance.jpg" alt="Website Maintenance & Support">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

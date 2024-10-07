@@ -1,0 +1,253 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - The Elite Advertising</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-section {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.locations {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.location {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: left;
+}
+
+.map-container {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+  </style>
+</head>
+<body>
+
+  <section class="contact-section">
+    <h1>Contact Us</h1>
+    
+    <!-- Location Details -->
+    
+
+      <!-- Add more locations as needed -->
+    </div>
+
+    <!-- Google Map Embed 
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d630.3237458424643!2d88.10024767382265!3d26.65970057845036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e5b3db5d97e047%3A0x99b995fbbcff87f1!2sDhulabari!5e0!3m2!1sen!2snp!4v1725928328870!5m2!1sen!2snp"  
+        width="600" height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
+--><!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact Us - The Elite Advertising</title>
+      <style>
+          body {
+              font-family: 'Arial', sans-serif;
+              margin: 0;
+              padding: 0;
+              background-color: #f4f7fa; /* Soft light background */
+              color: #333;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              min-height: 100vh;
+          }
+  
+          .contact-section {
+              max-width: 1200px;
+              margin: 50px auto;
+              padding: 60px; /* Increased padding */
+              background: #ffffff; /* Clean white background */
+              border-radius: 12px;
+              box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+              text-align: center;
+              position: relative;
+              overflow: hidden;
+          }
+  
+          h1 {
+              font-size: 3rem;
+              color: #3498db; /* Soft blue */
+              margin-bottom: 30px;
+              text-transform: uppercase; /* Adds uniqueness */
+              letter-spacing: 1px; /* Spacing for modern look */
+          }
+  
+          .contact-details {
+              display: flex;
+              justify-content: space-around; /* Space between boxes */
+              margin-bottom: 30px;
+              position: relative;
+              gap: 20px; /* Space between items */
+          }
+  
+          .detail-card {
+              background-color: #ecf0f1; /* Light gray */
+              padding: 30px;
+              border-radius: 15px;
+              width: 400px; /* Fixed width for cards */
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+              position: relative; /* Position for pseudo-element */
+              transition: transform 0.3s, box-shadow 0.3s;
+              text-align: left; /* Align text to the left */
+          }
+  
+          .detail-card:hover {
+              transform: translateY(-5px); /* Lift effect on hover */
+              box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+          }
+  
+          .detail-card h3 {
+              font-size: 1.5rem;
+              color: #2980b9; /* Darker blue for headings */
+              margin-bottom: 10px;
+              font-weight: bold; /* Emphasis on headings */
+          }
+  
+          .detail-card p {
+              color: #555;
+              font-size: 1rem;
+              line-height: 1.5;
+          }
+  
+          .icon {
+              font-size: 2rem; /* Icon size */
+              color: #3498db; /* Icon color */
+              margin-bottom: 10px; /* Space between icon and text */
+          }
+  
+          .map-container {
+              width: 100%;
+              height: 450px;
+              margin-top: 20px;
+              border-radius: 15px;
+              overflow: hidden;
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          }
+  
+          .map-container iframe {
+              width: 100%;
+              height: 100%;
+              border: none;
+              border-radius: 15px;
+              transition: transform 0.3s; /* Map transition */
+          }
+  
+          .map-container:hover iframe {
+              transform: scale(1.05); /* Scale map on hover */
+          }
+  
+          /* Button style for call to action */
+          .cta-button {
+              display: inline-block;
+              margin-top: 20px;
+              padding: 10px 20px;
+              font-size: 1rem;
+              color: #fff;
+              background-color: #3498db; /* Button color */
+              border: none;
+              border-radius: 5px;
+              text-decoration: none;
+              transition: background-color 0.3s, transform 0.3s;
+          }
+  
+          .cta-button:hover {
+              background-color: #2980b9; /* Darker blue on hover */
+              transform: scale(1.05); /* Slight grow effect */
+          }
+  
+          /* Footer section */
+          .footer {
+              margin-top: 40px;
+              font-size: 0.9rem;
+              color: #777;
+          }
+      </style>
+  </head>
+  <body>
+  
+  <section class="contact-section">
+      <h1>The Elite Advertising</h1>
+      
+      <!-- Contact Details -->
+      <div class="contact-details">
+          <div class="detail-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0C8.686 0 6 2.686 6 6c0 5.25 6 12 6 12s6-6.75 6-12c0-3.314-2.686-6-6-6zm0 8.25A1.75 1.75 0 1 0 12 11a1.75 1.75 0 0 0 0-3.5z"/></svg>
+
+              <h3>Our Location</h3>
+              <p>
+                  Opposite to Everest Bank,<br>
+                  3rd Floor, Dhulabari
+              </p>
+          </div>
+          <div class="detail-card">
+              <div class="icon">📧</div> <!-- Email icon -->
+              <h3>Contact Us</h3>
+              <p>
+                  <strong>Email:</strong> <a href="mailto:theeliteadvertising@gmail.com">theeliteadvertising@gmail.com</a><br>
+                  <strong>Phone:</strong> <a href="tel:+9814016919">9814016919</a>, <a href="tel:+9706377683">9706377683</a>
+              </p>
+          </div>
+      </div>
+  
+      <!-- Google Map Embed -->
+      <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d630.3237458424643!2d88.10024767382265!3d26.65970057845036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e5b3db5d97e047%3A0x99b995fbbcff87f1!2sDhulabari!5e0!3m2!1sen!2snp!4v1725928328870!5m2!1sen!2snp"  
+          loading="lazy"></iframe>
+      </div>
+  
+      <!-- Call to Action Button -->
+      <a href="mailto:theeliteadvertising@gmail.com" class="cta-button">Email Us</a>
+  
+      <!-- Footer Section -->
+      <div class="footer">
+          <p>&copy; 2024 The Elite Advertising. All rights reserved.</p>
+      </div>
+  </section>
+  
+  </body>
+  </html>
+  
+

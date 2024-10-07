@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Strategies - The Elite Advertising</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            background-color: gray;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content-section {
+            max-width: 1200px; /* Increased max width for better layout */
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: gray;
+            text-align: center; /* Centered headings */
+            margin-bottom: 20px; /* Added margin for spacing */
+        }
+
+        .strategies-container {
+            display: flex; /* Flexbox for responsive layout */
+            flex-wrap: wrap; /* Allow wrapping to new lines */
+            justify-content: space-around; /* Space around items */
+        }
+
+        .strategy {
+            background-color: #f3f3f3; /* Light grey background */
+            border: 1px solid #e0e0e0; /* Border around each strategy box */
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px;
+            width: calc(30% - 30px); /* Responsive width */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: transform 0.3s; /* Smooth scale effect */
+        }
+
+        .strategy:hover {
+            transform: translateY(-5px); /* Hover effect */
+        }
+
+        .strategy img {
+            width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px; /* Rounded corners for images */
+            margin-bottom: 10px; /* Space between image and text */
+        }
+
+        .strategy strong {
+            display: block; /* Block display for strong text */
+            font-size: 1.2em; /* Larger font size for titles */
+            margin-bottom: 10px; /* Space below titles */
+        }
+
+        @media (max-width: 768px) {
+            .strategy {
+                width: calc(45% - 30px); /* Adjust width for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .strategy {
+                width: 100%; /* Full width for mobile devices */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Creative Strategies</h1>
+    </div>
+
+    <div class="content-section">
+        <h2></h2>
+        <p>
+            At <strong>ELITE Advertising</strong>, we believe that creativity is at the heart of effective marketing. Our team is dedicated to developing innovative strategies that not only capture attention but also deliver measurable results. We tailor our creative solutions to align with your brand's vision and goals.
+        </p>
+        <h3>Our Creative Strategies Include:</h3>
+        <div class="strategies-container">
+            <div class="strategy">
+                <strong>Innovative Campaign Concepts:</strong>
+                <p>We craft unique campaign ideas that resonate with your audience.</p>
+                <p>From digital to print, our creative campaigns are designed to stand out and engage your target market effectively.</p>
+                <img src="creative_campaign_concepts.jpg" alt="Innovative Campaign Concepts">
+            </div>
+            <div class="strategy">
+                <strong>Content Creation:</strong>
+                <p>Engaging content that tells your brand story.</p>
+                <p>Our content team develops high-quality visuals and compelling narratives that captivate and convert your audience.</p>
+                <img src="creative_content_creation.jpg" alt="Content Creation">
+            </div>
+            <div class="strategy">
+                <strong>Social Media Strategies:</strong>
+                <p>Maximize your brand's online presence.</p>
+                <p>We create tailored social media strategies that drive engagement and foster community, ensuring your brand stays relevant in a competitive landscape.</p>
+                <img src="creative_social_media_strategies.jpg" alt="Social Media Strategies">
+            </div>
+            <div class="strategy">
+                <strong>Brand Activation:</strong>
+                <p>Bringing your brand to life through experiences.</p>
+                <p>We design memorable brand activations that create emotional connections with your audience, turning them into loyal customers.</p>
+                <img src="creative_brand_activation.jpg" alt="Brand Activation">
+            </div>
+            <div class="strategy">
+                <strong>Market Differentiation:</strong>
+                <p>Stand out from the competition.</p>
+                <p>We analyze your competitors and develop strategies that highlight your unique value propositions, ensuring your brand is perceived as a leader in your industry.</p>
+                <img src="creative_market_differentiation.jpg" alt="Market Differentiation">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

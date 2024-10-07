@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ads Management - The Elite Advertising</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            background-color: gray;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content-section {
+            max-width: 1200px; /* Increased max width for better layout */
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: gray;
+            text-align: center; /* Centered headings */
+            margin-bottom: 20px; /* Added margin for spacing */
+        }
+
+        .ads-container {
+            display: flex; /* Flexbox for responsive layout */
+            flex-wrap: wrap; /* Allow wrapping to new lines */
+            justify-content: space-around; /* Space around items */
+        }
+
+        .ad-service {
+            background-color: #f3f3f3; /* Light grey background */
+            border: 1px solid #e0e0e0; /* Border around each service box */
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px;
+            width: calc(30% - 30px); /* Responsive width */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: transform 0.3s; /* Smooth scale effect */
+        }
+
+        .ad-service:hover {
+            transform: translateY(-5px); /* Hover effect */
+        }
+
+        .ad-service img {
+            width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px; /* Rounded corners for images */
+            margin-bottom: 10px; /* Space between image and text */
+        }
+
+        .ad-service strong {
+            display: block; /* Block display for strong text */
+            font-size: 1.2em; /* Larger font size for titles */
+            margin-bottom: 10px; /* Space below titles */
+        }
+
+        @media (max-width: 768px) {
+            .ad-service {
+                width: calc(45% - 30px); /* Adjust width for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .ad-service {
+                width: 100%; /* Full width for mobile devices */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Ads Management</h1>
+    </div>
+
+    <div class="content-section">
+        <h2></h2>
+        <p>
+            At <strong>ELITE Advertising</strong>, we specialize in managing comprehensive advertising campaigns that deliver results. Our expert team employs data-driven strategies to optimize your ad performance across various platforms, ensuring your message reaches the right audience.
+        </p>
+        <h3>Our Ads Management Services Include:</h3>
+        <div class="ads-container">
+            <div class="ad-service">
+                <strong>Campaign Strategy Development:</strong>
+                <p>We create tailored advertising strategies that align with your business objectives.</p>
+                <img src="adschitra.jpg" alt="Campaign Strategy Development">
+            </div>
+            <div class="ad-service">
+                <strong>Target Audience Analysis:</strong>
+                <p>Understanding your audience is key to effective advertising. We conduct in-depth analysis to identify and target your ideal customers.</p>
+                <img src="adschitra2.jpg" alt="Target Audience Analysis">
+            </div>
+            <div class="ad-service">
+                <strong>Performance Tracking:</strong>
+                <p>Our team closely monitors campaign performance using analytics tools to ensure optimal results.</p>
+                <img src="adschitra3.jpg" alt="Performance Tracking">
+            </div>
+            <div class="ad-service">
+                <strong>Budget Management:</strong>
+                <p>We help you maximize your ad spend by efficiently managing your advertising budget.</p>
+                <img src="adschitra4.jpg" alt="Budget Management">
+            </div>
+            <div class="ad-service">
+                <strong>Creative Ad Development:</strong>
+                <p>Our creative team designs compelling ads that capture attention and drive engagement.</p>
+                <img src="adschitra5.jpg" alt="Creative Ad Development">
+            </div>
+            <div class="ad-service">
+                <strong>Reporting and Insights:</strong>
+                <p>We provide detailed reports and insights that help you understand your campaign's impact and ROI.</p>
+                <img src="adschitra6.jpg" alt="Reporting and Insights">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
